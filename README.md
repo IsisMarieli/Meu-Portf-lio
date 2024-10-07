@@ -58,7 +58,7 @@ Para acessar meu portfólio, basta clonar o repositório e abrir o arquivo `inde
 
 bash
 # Clone o repositório
-git clone https://github.com/seu-usuario/seu-repositorio.git
+git clone https://github.com/IsisMarieli/Meu-Portf-lio
 
 # Abra o arquivo no navegador
 cd seu-repositorio
