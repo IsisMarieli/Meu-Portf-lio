@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    font-family: "Chakra Petch", sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.titulo-nome{
+    flex-grow: 1;
+}
+
+.paginas{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+header,
+.resummo,
+.graduacoes,
+.tabela {
+    background-color: #c297fe;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+h1 {
+    color: white;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo-nome {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 10px;
+}
+
+.nome {
+    font-size: 12px;
+    color: black;
+}
+
+.perfil {
+    width: 250px;
+    height: auto;
+    border-radius: 50%;
+    margin: 10px 0px 10px 0px;
+}
+
+.resumo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin: 0;
+    width: 100%;
+    height: 550px;
+    background-color: #1f093c;
+    padding: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.apresentacao{
+    max-width: 800px;
+    text-align: center;
+}
+
+.graduacoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 100%;
+    height: 550px;
+    background-color: #1f093c;
+    margin-bottom: 40px;
+    padding: 20px;
+    text-align: center;
+}
+
+.cursos{
+    max-width: 800px;
+    text-align: center;
+}
+
+.cursos ul {
+    padding: 0;
+    margin: 0;
+}
+
+.cursos li{
+    margin: 5px 0;
+    list-style-position: outside; 
+    text-align: left;
+}
+
+.graduacoes h2{
+    margin: 10px 0px 20px 0px;
+}
+
+.resumo h2,
+.graduacoes h2{
+    margin-top: 20px 0;
+    padding: 0 20px;
+}
+
+.graduacoes p,
+.resumo p {
+    text-align: justify;
+    white-space: normal;
+    margin: 20px 0;
+    padding: 0 20px;
+}
+
+.graduacoes,
+.resumo {
+    margin: 0;
+    padding: 0;
+}
+
+.tabela {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 750px;
+    margin: 0;
+    padding: 20px;
+    background-color: #1f093c;
+}
+
+th {
+    color: #ffffff;
+    background-color: #c297fe;
+}
+
+th,
+td {
+    padding: 15px;
+    border: 2px solid wheat;
+}
+
+.habilidades {
+    text-align: center;
+    color: white;
+}
+
+.conteiner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo-galeria {
+    text-align: center;
+}
+
+.imgProjeto {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    padding: 0px 20px 20px 95px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.imgProjeto:hover {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+.projetoS {
+    background-color: #1f093c;
+    color: white;
+}
+
+.projeto {
+    text-align: justify;
+    width: 620px;
+    height: 568px;
+    margin: 20px auto;
+    border-radius: 5px;
+    padding: 0 20px 20px 20px;
+}
+
+.projeto h2 {
+    margin-bottom: 10px;
+}
+
+.projeto p {
+    margin-top: 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+textarea {
+    resize: none;
+}
+
+input,
+textarea,
+button {
+    margin: 10px 0;
+    width: 100%;
+    max-width: 400px;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.button-projeto {
+    display: inline-block;
+    font-size: 15px;
+    margin: 20px auto;
+    padding: 10px 20px;
+    width: 170px;
+    height: 40px;
+    border-radius: 100px;
+    border: none;
+    color: white;
+    background-color: #4b0d92;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button-projeto:hover {
+    box-shadow: 0 0 18px #6f16ff;
+    background-color: #4b36ea;
+}
+
+.button-projeto a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.area-contatos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    background-color: #b07cf9;
+}
+
+.contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1f093c;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.paginas {
+    display: flex;
+    margin-left: auto;
+    font-size: 15px;
+    padding: 8px;
+    margin: 10px;
+}
+
+.home,
+.projetos,
+.contatos {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+a:hover {
+    color: #1f093c;
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+.direitos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+}
+
+.rodape-contatos h4 {
+    padding: 10px;
+}
+
+.direitos-contatos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+}
+
+
+.buttonEmail,
+.buttongithub,
+.buttonlinkedin {
+    font-family: "Chakra Petch", sans-serif;
+    width: 120px;
+    padding: 5px;
+    margin: 5px;
+    font-size: 16px;
+    border: none;
+    border-radius: 80px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.buttonEmail {
+    color: white;
+    background-color: gray;
+}
+
+.buttonEmail:hover {
+    box-shadow: 0 0 10px #ebebeb;
+    background-color: #ebebeb;
+    color: black;
+}
+
+.buttonEmail a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.buttongithub {
+    color: white;
+    background-color: black;
+}
+
+.buttongithub:hover {
+    background-color: #c0bbbb;
+    box-shadow: 0 0 10px #e8e5e5;
+    color: black;
+}
+
+.buttongithub a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.buttonlinkedin {
+    color: white;
+    background-color: #258dbf;
+}
+
+.buttonlinkedin:hover {
+    background-color: rgb(120, 195, 220);
+    box-shadow: 0 0 10px rgb(176, 228, 245);
+    color: black;
+}
+
+.buttonlinkedin a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.map iframe {
+    width:600;
+    height:450; 
+    border:0;
+}
+
+.button-enviar {
+    font-family: "Chakra Petch", sans-serif;
+    width: 120px;
+    padding: 5px;
+    margin: 5px;
+    font-size: 16px;
+    border: none;
+    border-radius: 80px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button-enviar:hover {
+    box-shadow: 0 0 18px #6f16ff;
+    background-color: #4b36ea;
+    color: white;
+}
+
+footer {
+    text-align: center;
+    background-color: #c297fe;
+    width: 100%;
+    height: 141px;
+}
+
+.icons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconResidencia {
+    width: 150px;
+}
+
+.iconPorto {
+    width: 180px;
+}
+
+.iconEmbarque {
+    width: 150px;
+}
+
+.icondevWoman {
+    width: 60px;
+}
+
+.icondevWoman,
+.iconEmbarque,
+.iconPorto,
+.iconResidencia {
+    padding: 10px;
+}
