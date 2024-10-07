@@ -54,5 +54,20 @@ O layout foi desenvolvido utilizando Flexbox, garantindo que o portfólio seja a
 
 ## 🚀 Como abrir meu projeto
 
-Para acessar meu portfólio, basta clicar nesse link:
+Para acessar meu portfólio, basta clonar o repositório e abrir o arquivo `index.html` no seu navegador:
+
+bash
+# Clone o repositório
+git clone https://github.com/seu-usuario/seu-repositorio.git
+
+# Abra o arquivo no navegador
+cd seu-repositorio
+open index.html
+
+👩🏽‍💻 Contato
+Sinta-se à vontade para me contatar por e-mail ou através das minhas redes sociais:
+
+E-mail: isismarieli1@gmail.com
+LinkedIn: linkedin.com/in/isis-marieli-9a350225b
+
 
