@@ -3,11 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contatos</title>
+    <meta name="description" content="Portfólio de Isis Marieli - Desenvolvedora, 
+    estudante de Redes de Computadores e Análise e Desenvolvimento de Sistemas.">
+    <title>Portfólio de Isis</title>
     <link rel="icon" href="development-woman.webp">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -20,9 +19,9 @@
         </div>
         <div class="conteiner">
             <div class="paginas">
-                <a href="home.html" class="home"><i class="fa-solid fa-house"></i> HOME</a>
-                <a href="projetos.html" class="projetos">PROJETOS</a>
-                <a href="contatos.html" class="contatos">CONTATOS</a>
+                <a href="home.html">HOME</a>
+                <a href="projetos.html">PROJETOS</a>
+                <a href="contatos.html">CONTATOS</a>
             </div>
         </div>
     </header>
@@ -32,24 +31,25 @@
                 <form action="/submit" method="POST" onsubmit="return false;">
                     <div class="form-group">
                         <label for="name">Nome:</label>
-                        <input type="text" id="name" name="name">
+                        <input type="text" id="name" name="name" required>
                     </div>
 
                     <div class="form-group">
                         <label for="email">Email:</label>
-                        <input type="email" id="email" name="email">
+                        <input type="email" id="email" name="email" required>
                     </div>
 
                     <div class="form-group">
                         <label for="mensagem">Mensagem:</label>
-                        <textarea id="mensagem" name="mensagem" rows="5" cols="35"></textarea>
+                        <textarea id="mensagem" name="mensagem" rows="5" cols="35" required></textarea>
                     </div>
 
                     <h3>Localização</h3>
                     <div class="map">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d252836.42422154237!2d-35.09903353297822!3d-8.043278357232083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab196f94e5408b%3A0xe5800ef782bde3a6!2sRecife%2C%20PE!5e0!3m2!1spt-BR!2sbr!4v1728306977578!5m2!1spt-BR!2sbr"
-                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d252836.42422154237!2d-35.
+                            09903353297822!3d-8.043278357232083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!
+                            1s0x7ab196f94e5408b%3A0xe5800ef782bde3a6!2sRecife%2C%20PE!5e0!3m2!1spt-BR!2sbr!4v172
+                            8306977578!5m2!1spt-BR!2sbr" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
                             gestureHandling="greedy"></iframe>
                     </div>
                     <button class="button-enviar" type="submit">Enviar</button>
@@ -57,20 +57,19 @@
             </div>
         </section>
     </main>
+    <footer class="rodape-contatos">
+        <div class="buttons">
+            <h4>Conecte-se comigo!</h4>
+            <nav>
+                <button class="buttonEmail"><a href="mailto:Isismarieli1@gmail.com" target="_blank">E-mail</a></button>
+                <button class="buttongithub"><a href="https://github.com/IsisMarieli"
+                        target="_blank">GitHub</a></button>
+                <button class="buttonlinkedin"><a href="https://www.linkedin.com/in/isis-marieli-9a350225b/"
+                        target="_blank">LinkedIn</a></button>
+            </nav>
+        </div>
+        <p class="direitos-contatos"> Criado do zero por Isis Marieli. Todos os direitos reservados.</p>
+    </footer>
 </body>
-<footer class="rodape-contatos">
-    <div class="buttons">
-        <h4>Conecte-se comigo!</h4>
-        <nav>
-            <button class="buttonEmail"><a href="mailto:Isismarieli1@gmail.com" target="_blank"><i
-                        class="fa-solid fa-envelope"></i> E-mail</a></button>
-            <button class="buttongithub"><a href="https://github.com/IsisMarieli" target="_blank"><i
-                        class="fa-brands fa-github"></i> GitHub</a></button>
-            <button class="buttonlinkedin"><a href="https://www.linkedin.com/in/isis-marieli-9a350225b/"
-                    target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></button>
-        </nav>
-    </div>
-    <p class="direitos-contatos"> Criado do zero por Isis Marieli. Todos os direitos reservados.</p>
-</footer>
 
 </html>
