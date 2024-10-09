@@ -3,9 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Portfólio de Isis Marieli - Desenvolvedora,
+    estudante de Redes de Computadores e Análise e Desenvolvimento de Sistemas.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio de Isis</title>
-    <link rel="icon" href="development-woman.webp">
+    <link rel="icon" href="development-woman.webp" type="image/webp">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -16,18 +18,18 @@
                 <h1>ISIS MARIELI</h1>
             </div>
         </div>
-        <div class="conteiner">
-            <nav class="paginas">
-                <a href="home.html" class="home">HOME</a>
-                <a href="projetos.html" class="projetos">PROJETOS</a>
-                <a href="contatos.html" class="contatos">CONTATOS</a>
-            </nav>
-        </div>
+        <nav class="conteiner">
+            <ul class="paginas">
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="projetos.html">PROJETOS</a></li>
+                <li><a href="contatos.html">CONTATOS</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
-        <div class="resumo">
+        <section class="resumo">
             <img src="imgs/minhaFoto.jpg" alt="foto perfil" class="perfil" title="Perfil Isis">
-            <section class="apresentacao">
+            <div class="apresentacao">
                 <h2>SOBRE MIM</h2>
                 <p>
                     Sou uma estudante dedicada, atualmente cursando duas graduações simultaneamente em Redes de
@@ -36,16 +38,14 @@
                     adquirir experiência prática que complemente minha formação acadêmica e me prepare para uma carreira
                     de sucesso no setor de TI.
                 </p>
-            </section>
-        </div>
-        <section class="graduacoes">
-            <div class="cursos">
-                <h2>GRADUAÇÕES</h2>
-                <ul>
-                    <li>Redes de Computadores: UNIBRA, 2023.2 - 2025.2</li>
-                    <li>Análise e Desenvolvimento de Sistemas: UNINASSSAU - EMBARQUE DIGITAL, 2024.2 - 2026.2</li>
-                </ul>
             </div>
+        </section>
+        <section class="graduacoes">
+            <h2>GRADUAÇÕES</h2>
+            <ul>
+                <li>Redes de Computadores: UNIBRA, 2023.2 - 2025.2</li>
+                <li>Análise e Desenvolvimento de Sistemas: UNINASSAU - EMBARQUE DIGITAL, 2024.2 - 2026.2</li>
+            </ul>
         </section>
         <div class="tabela">
             <section class="habilidades">
@@ -92,18 +92,17 @@
                         <td>Básico</td>
                     </tr>
                 </table>
-
         </div>
         </section>
     </main>
+    <footer>
+        <div class="icons-conteiner">
+            <img class="iconEmbarque" src="imgs/embarquedigital.png" alt="icon embarque digital">
+            <img class="iconResidencia" src="imgs/residencia.png" alt="icon residência">
+            <img class="iconPorto" src="imgs/portodigital.png" alt="icon Porto Digital">
+        </div>
+        <p class="direitos">Criado do zero por Isis Marieli. Todos os direitos reservados.</p>
+    </footer>
 </body>
-<footer>
-    <figure class="icons-conteiner">
-        <img class="iconEmbarque" src="imgs/embarquedigital.png" alt="icon embarque digital">
-        <img class="iconResidencia" src="imgs/residencia.png" alt="icon residência">
-        <img class="iconPorto" src="imgs/portodigital.png" alt="icon Porto Digital">
-    </figure>
-    <p class="direitos"> Criado do zero por Isis Marieli. Todos os direitos reservados.</p>
-</footer>
 
 </html>
