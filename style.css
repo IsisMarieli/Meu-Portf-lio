@@ -21,24 +21,29 @@ header {
     padding: 20px;
 }
 
-.titulo-nome{
+.titulo-nome {
     flex-grow: 1;
 }
 
-.paginas{
+.paginas {
     display: flex;
     justify-content: flex-end;
     gap: 10px;
 }
 
-header,
-.resummo,
-.graduacoes,
-.tabela {
+header {
     background-color: #c297fe;
     width: 100%;
     box-sizing: border-box;
     padding: 20px;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 h1 {
@@ -84,7 +89,7 @@ main {
     text-align: center;
 }
 
-.apresentacao{
+.apresentacao {
     max-width: 800px;
     text-align: center;
 }
@@ -103,28 +108,12 @@ main {
     text-align: center;
 }
 
-.cursos{
-    max-width: 800px;
-    text-align: center;
-}
-
-.cursos ul {
-    padding: 0;
-    margin: 0;
-}
-
-.cursos li{
-    margin: 5px 0;
-    list-style-position: outside; 
-    text-align: left;
-}
-
-.graduacoes h2{
+.graduacoes h2 {
     margin: 10px 0px 20px 0px;
 }
 
 .resumo h2,
-.graduacoes h2{
+.graduacoes h2 {
     margin-top: 20px 0;
     padding: 0 20px;
 }
@@ -291,9 +280,7 @@ button {
     margin: 10px;
 }
 
-.home,
-.projetos,
-.contatos {
+header a {
     color: white;
     text-decoration: none;
     margin: 0 10px;
@@ -303,8 +290,6 @@ button {
 
 a:hover {
     color: #1f093c;
-    -webkit-transform: scale(1.5);
-    transform: scale(1.5);
 }
 
 .direitos {
@@ -389,9 +374,9 @@ a:hover {
 }
 
 .map iframe {
-    width:600;
-    height:450; 
-    border:0;
+    width: 600;
+    height: 450;
+    border: 0;
 }
 
 .button-enviar {
