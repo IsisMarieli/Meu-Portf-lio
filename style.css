@@ -1,24 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html {
     font-family: "Chakra Petch", sans-serif;
-}
-
-body {
-    overflow-x: hidden;
+    font-size: 16px;
 }
 
 header {
+    background-color: #8261b2;
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 100%;
     padding: 20px;
+}
+
+header ul{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: rgb(75, 34, 82);
 }
 
 .titulo-nome {
@@ -28,62 +44,33 @@ header {
 .paginas {
     display: flex;
     justify-content: flex-end;
-    gap: 10px;
+    gap: 20px;
 }
 
-header {
-    background-color: #c297fe;
-    width: 100%;
-    box-sizing: border-box;
-    padding: 20px;
+.home,
+.projetos,
+.contatos {
+    display: inline-block;
+    transition: all 0.5s;
+    cursor: pointer;
 }
 
-header ul {
-    display: flex;
-    justify-content: space-around;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-h1 {
-    color: white;
-}
-
-main {
-    display: flex;
-    flex-direction: column;
-}
-
-.titulo-nome {
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    padding: 10px;
-}
-
-.nome {
-    font-size: 12px;
-    color: black;
-}
-
-.perfil {
-    width: 250px;
-    height: auto;
-    border-radius: 50%;
-    margin: 10px 0px 10px 0px;
-}
+.home:hover,
+.projetos:hover,
+.contatos:hover{
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+} 
 
 .resumo {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: #390341;
     margin: 0;
     width: 100%;
     height: 550px;
-    background-color: #1f093c;
     padding: 40px;
     margin-bottom: 40px;
     text-align: center;
@@ -99,16 +86,15 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: #390341;
     width: 100%;
     height: 550px;
-    background-color: #1f093c;
     margin-bottom: 40px;
     padding: 20px;
     text-align: center;
 }
 
-.graduacoes h2 {
+.graduacoes h2{
     margin: 10px 0px 20px 0px;
 }
 
@@ -140,23 +126,22 @@ main {
     height: 750px;
     margin: 0;
     padding: 20px;
-    background-color: #1f093c;
 }
 
 th {
     color: #ffffff;
-    background-color: #c297fe;
+    background-color: #8261b2;
 }
 
 th,
 td {
-    padding: 15px;
-    border: 2px solid wheat;
+    padding: 20px;
+    border: 2px solid rgb(0, 0, 0);
 }
 
 .habilidades {
     text-align: center;
-    color: white;
+    color:  #390341;
 }
 
 .conteiner {
@@ -185,8 +170,7 @@ td {
 }
 
 .projetoS {
-    background-color: #1f093c;
-    color: white;
+    color: #390341;
 }
 
 .projeto {
@@ -253,63 +237,97 @@ button {
     color: inherit;
 }
 
+/* Contatos */
 .area-contatos {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    color: white;
-    background-color: #b07cf9;
 }
 
 .contato {
+    background-color: #8261b2;
+    width: 400px;
+    height: auto;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+body {
+    background-color: #c297fe;
+    color: #390341;
+}
+
+main {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    background-color: #1f093c;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.paginas {
-    display: flex;
-    margin-left: auto;
-    font-size: 15px;
-    padding: 8px;
-    margin: 10px;
+.map iframe {
+    width: 350px;
+    height: 200px;
+    border: 0;
 }
 
-header a {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
-    transition: all 0.5s;
+.button-enviar {
+    font-family: "Chakra Petch", sans-serif;
+    width: 120px;
+    padding: 5px;
+    margin: 5px;
+    font-size: 16px;
+    border: none;
+    border-radius: 80px;
     cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-a:hover {
-    color: #1f093c;
+.button-enviar:hover {
+    box-shadow: 0px 0px 18px #6f16ff;
+    background-color: #441379;
+    color: white;
+}
+
+.perfil {
+    width: 250px;
+    height: auto;
+    border-radius: 50%;
+    margin: 35px 0px 20px 0px;
+}
+
+.imgProjeto {
+    width: 400px;
+}
+
+.icons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .direitos {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 12px;
+    padding: 15px;
 }
 
-.rodape-contatos h4 {
+.icons-container img {
+    flex-shrink: 1;
+    width: 200px;
+    height: auto;
+}
+
+.rodape-contatos h3 {
     padding: 10px;
 }
 
-.direitos-contatos {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 12px;
+footer {
+    text-align: center;
+    background-color: #8261b2;
+    width: 100%;
+    padding: 20px 0;
 }
-
 
 .buttonEmail,
 .buttongithub,
@@ -336,11 +354,6 @@ a:hover {
     color: black;
 }
 
-.buttonEmail a {
-    text-decoration: none;
-    color: inherit;
-}
-
 .buttongithub {
     color: white;
     background-color: black;
@@ -350,11 +363,6 @@ a:hover {
     background-color: #c0bbbb;
     box-shadow: 0 0 10px #e8e5e5;
     color: black;
-}
-
-.buttongithub a {
-    text-decoration: none;
-    color: inherit;
 }
 
 .buttonlinkedin {
@@ -368,68 +376,11 @@ a:hover {
     color: black;
 }
 
-.buttonlinkedin a {
-    text-decoration: none;
-    color: inherit;
-}
-
-.map iframe {
-    width: 600;
-    height: 450;
-    border: 0;
-}
-
-.button-enviar {
-    font-family: "Chakra Petch", sans-serif;
-    width: 120px;
-    padding: 5px;
-    margin: 5px;
-    font-size: 16px;
-    border: none;
-    border-radius: 80px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.button-enviar:hover {
-    box-shadow: 0 0 18px #6f16ff;
-    background-color: #4b36ea;
-    color: white;
-}
-
-footer {
-    text-align: center;
-    background-color: #c297fe;
-    width: 100%;
-    height: 141px;
-}
-
-.icons-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.iconResidencia {
-    width: 150px;
-}
-
-.iconPorto {
-    width: 180px;
-}
-
-.iconEmbarque {
-    width: 150px;
-}
-
-.icondevWoman {
-    width: 60px;
-}
-
-.icondevWoman,
-.iconEmbarque,
-.iconPorto,
-.iconResidencia {
-    padding: 10px;
+@media (max-width: 768px) {
+    html {
+        font-size: 90%; 
+    }
+    .icons-container img {
+        width: 100px;
+    }
 }
